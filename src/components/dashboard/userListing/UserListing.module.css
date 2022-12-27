@@ -1,0 +1,52 @@
+.userlisting__cont {
+  padding: 1rem 2rem;
+  border-right: 1px solid #d5d4de;
+  min-height: 90vh;
+}
+
+.userlisting__cont > div:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+.userlisting__header {
+  text-align: center;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #0c0b0e;
+}
+
+.user__cont {
+  display: grid;
+  grid-template-columns: 15fr 85fr;
+  gap: 1rem;
+  align-items: center;
+  border-bottom: 1px solid #d5d4de;
+  padding: 1.5rem 0.7rem;
+}
+
+.user__cont:not(:last-child) {
+  margin-bottom: 1.6rem;
+}
+
+.user__img--wrapper {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.user__img--wrapper img {
+display: block;
+  width: 100%;
+}
+
+.user__name {
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #0c0b0e;
+}
+
+.user__scores {
+    font-weight: bold;
+    color: #0c0b0e;
+}

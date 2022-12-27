@@ -1,0 +1,63 @@
+/* .playground__cont {
+
+} */
+
+.active__user--cont {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+.active__user--cont > div{
+    margin-left: 2rem;
+}
+
+.user__img--wrapper {
+    width: 4rem;
+    height: 4rem;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.user__img--wrapper img {
+    width: 100%;
+}
+
+.user__btn--icon {
+    font-size: 28px;
+}
+
+.user__btn--icon1 {
+    font-size: 20px;
+}
+
+.logout__btn--wrapper {
+    position: relative;
+}
+
+.logout__btn1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.logout__btn2 {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: block;
+    transform: translateY(100%);
+    background-color: #fff;
+    padding: 0.4rem 2rem;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
+.playground {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: #fff;
+    margin-top: 5rem;
+    border-radius: 10px;
+    min-height: 70vh;
+}
+
