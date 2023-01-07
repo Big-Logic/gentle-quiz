@@ -1,43 +1,33 @@
-import React from "react";
+import React, { useState } from "react";
 
 import Card from "../../UI/Card";
+import PlaygroundHeader from "./playgroundHeader/PlaygroundHeader";
+import ActiveUser from "../activeuser/ActiveUser";
+import PlayButton from "./playbutton/PlayButton";
+import QuizSetup from "./quizsetup/QuizSetup";
+import Quiz from "./quiz/Quiz";
 
 import styles from "./Playground.module.css";
 
-import face from "./face.jpg";
-
 const Playground = () => {
+  const [playgroundView, setPlaygroundView] = useState("playbtn");
+  const [quizSetupValues, setQuizSetupValues] = useState(null);
   return (
     <Card className={styles["playground__cont"]}>
-      <Card className={styles["active__user--cont"]}>
-        <div>
-          <button>
-            <i className={`${"las la-cog"} ${styles["user__btn--icon"]}`}></i>
-          </button>
-        </div>
-        <div>
-          <h2>Big Logic</h2>
-        </div>
-        <div>
-          <div className={styles["user__img--wrapper"]}>
-            <img src={face} alt="user-pic" />
-          </div>
-        </div>
-        <div>
-          <div className={styles["logout__btn--wrapper"]}>
-            <button className={styles["logout__btn1"]}>
-              <i
-                className={`${"las la-angle-down"} ${
-                  styles["user__btn--icon1"]
-                }`}
-              ></i>
-            </button>
-            <button className={styles["logout__btn2"]}>Logout</button>
-          </div>
-        </div>
-      </Card>
+      <ActiveUser />
       <Card className={styles["playground"]}>
-        <Card className={styles["game__details"]}></Card>
+        <PlaygroundHeader />
+        <Card className={styles["game__details"]}>
+          {playgroundView === "playbtn" ? (
+            <PlayButton setPlaygroundView={setPlaygroundView} />
+          ) : playgroundView === "setup" ? (
+            <QuizSetup setPlaygroundView={setPlaygroundView} setQuizSetupValues={setQuizSetupValues} />
+          ) : playgroundView === "quiz" ? (
+            <Quiz quizSetupValues={quizSetupValues} />
+          ) : (
+            <h2>Loading...</h2>
+          )}
+        </Card>
       </Card>
     </Card>
   );

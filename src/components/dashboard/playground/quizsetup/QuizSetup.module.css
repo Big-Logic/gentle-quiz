@@ -1,0 +1,81 @@
+.setup__form--wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.setup__form--backbtn {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border:  1px solid #bab8c8;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(50%, 50%);
+    font-size: 3rem;
+}
+
+.setup__form--backbtn:hover {
+    background-color: #bab8c8;
+}
+
+.setup__form {
+    width: 60%;
+}
+
+.setup__form h3 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 3rem;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.setup__form p {
+    margin-left: 1rem;
+}
+
+.setup__form select, .setup__form input {
+    display: block;
+    width: 100%;
+    padding: 0.5rem 1rem;
+    font-size: 1.8rem;
+    font-weight: 400;
+    font-family: "Poppins", sans-serif;
+    border-radius: 50px;
+    margin-top: 1rem;
+    border: 1px solid #f1f1f4;
+}
+
+.setup__form select:focus, .setup__form input:focus {
+    outline: 0;
+    border: 1px solid #bab8c8;
+}
+
+.setup__form--btnwrapper {
+    text-align: right;
+}
+
+.setup__form--btnwrapper button {
+    border: 1px solid #bab8c8;
+    font-size: 1.8rem;
+    font-weight: 600;
+    padding: 0.6rem 2rem;
+    margin-left: 2rem;
+    border-radius: 50px;
+}
+
+.setup__form--btnwrapper button:last-child {
+    background-color: #747090;
+    color: #fff;
+}
+
+.setup__form--btnwrapper button:last-child:hover {
+    background-color: #5d5a73;
+}

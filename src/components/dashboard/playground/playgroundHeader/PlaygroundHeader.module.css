@@ -1,0 +1,15 @@
+.playground__header {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border-bottom: 1px solid #d5d4de;
+    align-items: center;
+    height: 10%;
+}
+
+.playground__header > div:last-child {
+    text-align: right;
+}
+
+.playground__header h2 {
+    color: #0c0b0e;
+}
