@@ -1,0 +1,23 @@
+.quiz__question {
+  font-size: 2rem;
+  margin-top: 3rem;
+}
+
+.answer__btns {
+  display: inline-block;
+  min-width: 15rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin: 2rem;
+  border: 1px solid lightgray;
+  padding: 1rem;
+  border-radius: 50px;
+}
+
+.btn__red {
+  border-color: red;
+}
+
+.btn__green {
+  border-color: green;
+}

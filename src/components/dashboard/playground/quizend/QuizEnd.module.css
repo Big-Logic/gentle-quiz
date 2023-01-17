@@ -1,0 +1,52 @@
+.quizend__wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.quizend__wrapper > div {
+  text-align: center;
+}
+
+.score__wrapper {
+  width: 25rem;
+  height: 25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 3rem auto;
+  border-radius: 50%;
+}
+
+.score__wrapper--red {
+  border: 5px solid red;
+}
+.score__wrapper--green {
+  border: 5px solid green;
+}
+
+.score {
+  font-size: 4rem;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.score__msg {
+  font-size: 2rem;
+}
+
+.restart__btn--wrapper {
+  text-align: center;
+}
+
+.restart__btn {
+  padding: 1rem 2rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+  background-color: #39b5e0;
+  color: #fff;
+}

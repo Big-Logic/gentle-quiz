@@ -1,0 +1,17 @@
+.quiz__footer--wrapper > div:last-child {
+  text-align: right;
+}
+
+.quiz__footer--wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+}
+
+.next__btn {
+  padding: 1rem 2rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+  background-color: #39b5e0;
+  color: #fff;
+}

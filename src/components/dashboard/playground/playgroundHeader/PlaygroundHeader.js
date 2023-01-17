@@ -1,20 +1,23 @@
-import React from "react";
+import React, { useContext } from 'react';
 
-import Card from "../../../UI/Card";
+import { quizContext } from '../../../../quiz-context/quiz-context';
 
-import styles from "./PlaygroundHeader.module.css";
+import Card from '../../../UI/Card';
+
+import styles from './PlaygroundHeader.module.css';
 
 const PlaygroundHeader = () => {
-    return (
-      <Card className={styles["playground__header"]}>
-        <div>
-          <h2>Gentle Quiz</h2>
-        </div>
-        <div>
-          <p>H-Score 0%</p>
-        </div>
-      </Card>
-    );
-}
+  const { highestScore } = useContext(quizContext);
+  return (
+    <Card className={styles['playground__header']}>
+      <div>
+        <h2>Gentle Quiz</h2>
+      </div>
+      <div>
+        <p>H-Score {highestScore}%</p>
+      </div>
+    </Card>
+  );
+};
 
 export default PlaygroundHeader;
